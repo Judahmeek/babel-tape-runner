@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-require('@babel/register')
+require('@babel/register')({
+  extensions: [".es", ".es6", ".js", ".jsx", ".mjs", ".ts", ".tsx"]
+})
 require('@babel/polyfill')
 var path = require('path')
 var glob = require('glob')
